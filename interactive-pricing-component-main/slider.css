@@ -1,5 +1,6 @@
 .slidecontainer {
     width: 100%; /* Width of the outside container */
+     
   }
   
   /* The slider itself */
@@ -7,17 +8,18 @@
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 90%; /* Full-width */
-    height: 10px; /* Specified height */
+    height: 10%; /* Specified height */
     background: hsl(174, 86%, 45%);
     outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
     border-radius: 25px;
     margin-bottom:50px;
     
-   
   }
+
+  
   
   /* Mouse-over effects */
   .slider:hover {
@@ -30,19 +32,26 @@
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none; /* Override default look */
     appearance: none;
-    width: 25px; /* Set a specific slider handle width */
-    height: 25px; /* Slider handle height */
+    width: 45px; /* Set a specific slider handle width */
+    height: 45px; /* Slider handle height */
     background:hsl(174, 86%, 45%); /* Green background */
     cursor: pointer; /* Cursor on hover */
     border-radius: 25px;
+    background-image: url("images/icon-slider.svg");
+    background-repeat: no-repeat;
+    background-position:center;  
+    
   }
   
   .slider::-moz-range-thumb {
     width: 25px; /* Set a specific slider handle width */
     height: 25px; /* Slider handle height */
-    background: hsl(174, 86%, 45%); /* Green background */
+    background: hsl(174, 86%, 45%);  
     cursor: pointer; /* Cursor on hover */
     border-radius: 25px;
     
+    
+    
   }
    
+  

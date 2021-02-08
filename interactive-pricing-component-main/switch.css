@@ -9,6 +9,7 @@
     cursor: pointer;
     outline: none;
     user-select: none;
+    
   }
   .switch--shadow + label{
     padding: 2px;

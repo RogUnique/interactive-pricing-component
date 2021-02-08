@@ -1,24 +1,61 @@
 let switchValue = document.getElementById("switch-shadow");
 let slider = document.getElementById("myRange");
-let output = document.getElementById("demo");
-let outputViews = document.getElementById("pageviews");
-let oneThousandsViews = 6.25;
-output.innerHTML = slider.value;
-outputViews.innerHTML = 116 - slider.value;
 
+let outputPrice = document.getElementById("demo");
+let outputViews = document.getElementById("pageviews");
+
+let oneThousandsViewsPrice = 6.25;
+
+
+let price = slider.value
+let views = oneThousandsViewsPrice  * price ;
+
+outputPrice.innerHTML =  "$ " + price   ;
+outputViews.innerHTML = 116.00   - price  ;
  
-slider.oninput = function() {
-  output.innerHTML = this.value;
-  if (switchValue.checked == true){
-    let discount = 25/100;
-    let price = oneThousandsViews * this.value ;
-    price=   (this.value *  discount);
-    outputViews.innerHTML = price;
+let priceText = '$ '  + price  ;
+let viewsText = views + "K PAGEVIEWS";
+ 
+ 
+slider.oninput = 
+
+function () {
+ 
+  if (switchValue.checked == true){   
+    
+    price = this.value;
+    views = oneThousandsViewsPrice  * price ;
+    let discount = (price   * 25/100);
+    price = price - discount;
+    priceText = '$ '  + price ;
+    viewsText = views + "K PAGEVIEWS" ;
+
+    outputViews.innerHTML = viewsText;
+    outputPrice.innerHTML = priceText ;
   }
   else {
-    let price = oneThousandsViews * this.value ;
-    outputViews.innerHTML = price;
+     
+    price = this.value ;
+    views = oneThousandsViewsPrice  * price ;
+    priceText = '$ '  + price ;
+    viewsText = views + "K PAGEVIEWS"
+
+
+    outputViews.innerHTML = viewsText;
+    outputPrice.innerHTML = priceText ;
   }
   
 }
  
+switchValue.onchange =   function () {
+  if (switchValue.checked == true){
+    let discount = (slider.value  * 25/100);
+    let price = slider.value - discount;
+    outputPrice.innerHTML = price ;
+  }
+  else {
+     
+    let price = slider.value;
+    outputPrice.innerHTML = price ;
+  }
+}
