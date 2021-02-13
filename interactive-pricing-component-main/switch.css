@@ -31,7 +31,7 @@
   
   .switch--shadow + label::before {
     right: 1px;
-    background-color: #f1f1f1;
+    background-color: hsl(223, 50%, 87%);
     border-radius:60px;
     transition: all 0.4s;
   
@@ -46,7 +46,7 @@
   }
   
   .switch--shadow:checked + label::before{
-    background-color: #8ce196;
+    background-color: hsl(174, 86%, 45%);
   }
   .switch--shadow:checked + label::after {
     transform: translateX(17px);
