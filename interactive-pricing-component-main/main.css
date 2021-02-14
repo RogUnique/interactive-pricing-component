@@ -59,7 +59,7 @@ body{
   
 }
 
-.parte-superior {
+.highest-part {
   
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +129,7 @@ body{
   
 }
 
-.porcentagem {
+.percent{
   display: none;
   background-color: hsl(14, 92%, 95%);
   color: hsl(15, 100%, 70%);
@@ -155,7 +155,7 @@ body{
 
    
 
-.parte-inferior {
+.lowest-part {
   
   display: flex; 
   justify-content: space-between;
@@ -230,7 +230,7 @@ body{
  }
 
 
-  .parte-inferior{
+  .lowest-part{
     flex-direction:column;
 
   }
@@ -335,7 +335,7 @@ body{
   body {
     font-size: 12px;
   }
-  .parte-inferior {
+  .lowest-part {
     padding-top:10px;
   }
 
