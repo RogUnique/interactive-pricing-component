@@ -48,13 +48,7 @@ body{
 
    
 }
-
-.background {
-  background-image: url('images/bg-pattern.svg');
-  width: 50%;
-  display: block;
-
-}
+  
 .pricing-component{
   background-color: hsl(0, 0%, 100%);
   border-radius: 12px;
@@ -200,9 +194,7 @@ body{
 }
 
 
-.switch-button  {
-  
-}
+ 
  
 
 
@@ -222,6 +214,11 @@ body{
     order: 0;
     font-size: 40px;
   }
+  .price-month {
+    margin-bottom: 20px;
+    margin-left : 20px;
+  }
+  
 
   .page-views {
     order: -2;
@@ -261,9 +258,7 @@ body{
     height: 10%;
   }
   
-  .price-month {
-    padding-bottom: 40px;
-   }
+ 
 }
 
 @media (max-width:656px) {
@@ -348,9 +343,7 @@ body{
     margin-bottom: 0px;
   
   }
-  .price-month {
-   padding-bottom: 40px;
-  }
+  
    
   .buttonDiv {
       margin-bottom: 30px;
@@ -361,5 +354,22 @@ body{
 
   .porcentagem {
     display: inline;
+  }
+}
+
+@media (max-width:286px) {
+  .pricing-component {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+  .switch__container {
+    width: 90%;
+  }
+  .button {
+    width: 100%;
   }
 }
