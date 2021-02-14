@@ -300,13 +300,13 @@ body{
     display: none;
   }
 
-  .percentageage{
+  .percentage{
     display: inline;
   }
   .discount-text {
     display: none;
   }
-  .percentageage{
+  .percentage{
     display: inline;
   }
   
@@ -352,7 +352,7 @@ body{
     display: none;
   }
 
-  .percentageage{
+  .percentage{
     display: inline;
   }
 }
