@@ -16,18 +16,7 @@
     transition: opacity .2s;
     border-radius: 25px;
   }
-  /*
-  .slider::-moz-range-progress{
-   
-    
-     
-   
-    background: hsl(174, 86%, 45%);
-    height: 1em;
-    border-radius: 25px;
-   
-  }
-   */
+  
   
   /* Mouse-over effects */
   .slider:hover {
